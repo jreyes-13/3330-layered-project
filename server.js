@@ -40,7 +40,7 @@ app.post("/api/tasks", (req, res, next) => {
     }catch(error){
         next(error);
     }
-    return task;
+    return newTask;
 });  
 
 const errorHandler = (err, req, res, next) => {
